@@ -1,0 +1,25 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+app.directive('dashboard', function() {
+  return {
+    templateUrl: 'pages/dashboard.html'
+  };
+});
+app.directive('clientCreation', function() {
+  return {
+    templateUrl: 'pages/clientCreation.html'
+  };
+});
+app.directive('matchCreation', function() {
+  return {
+    templateUrl: 'pages/matchCreation.html'
+  };
+});
+app.directive('reports', function() {
+  return {
+    templateUrl: 'pages/reports.html'
+  };
+});
