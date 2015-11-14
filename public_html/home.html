@@ -46,16 +46,25 @@
           </div>
           <div class="row">
               <ul class="nav nav-tabs">
-                  <li role="presentation" ng-repeat="l in lstForms"  class="{{l.slted}}"><a href="#"> {{l.frmDB}} </a></li>
+                  <li role="presentation" ng-repeat="l in lstForms"  class="{{l.slted}}"><a href="#" ng-click="divShow(l.id)" > {{l.frmDB}} </a></li>
              </ul>
               
           </div>
-          <div>
-              <div dashboard></div>
-              <div client-Creation></div>
-              <div match-Creation></div>
-              <div reports></div>
-          </div>
+          <div 
+    ng-switch on="divSelect">
+    
+               <div dashboard   ng-switch-when="1"></div>
+              <div client-Creation  ng-switch-when="2"></div>
+              <div match-Creation  ng-switch-when="3"></div>
+              <div reports  ng-switch-when="4"></div>
+  </div>
+<!--          <div>
+              <div dashboard  ng-show=displayDivs.db></div>
+              <div client-Creation ng-show=displayDivs.client></div>
+              <div match-Creation ng-show=displayDivs.match></div>
+              <div reports ng-show=displayDivs.report></div>
+          </div>-->
+          
       </div>       <!--Container End here-->
 
 
