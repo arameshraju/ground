@@ -23,3 +23,8 @@ app.directive('reports', function() {
     templateUrl: 'pages/reports.html'
   };
 });
+app.directive('adminDashboard', function() {
+  return {
+    templateUrl: 'adminPages/dashboard.html'
+  };
+});
