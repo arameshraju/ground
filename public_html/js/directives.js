@@ -28,3 +28,28 @@ app.directive('adminDashboard', function() {
     templateUrl: 'adminPages/dashboard.html'
   };
 });
+app.directive('activeSessions', function() {
+  return {
+    templateUrl: 'adminPages/activeSessions.html'
+  };
+});
+app.directive('scoreEntry', function() {
+  return {
+    templateUrl: 'adminPages/scoreEntry.html'
+  };
+});
+app.directive('scoreEntry', function() {
+  return {
+    templateUrl: 'adminPages/scoreEntry.html'
+  };
+});
+app.directive('userMaster', function() {
+  return {
+    templateUrl: 'adminPages/userMaster.html'
+  };
+});
+app.directive('adminReports', function() {
+  return {
+    templateUrl: 'adminPages/reports.html'
+  };
+});

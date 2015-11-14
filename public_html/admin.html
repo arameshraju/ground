@@ -31,7 +31,7 @@
       <div class="container-fluid" ng-controller="homeCtrl">
           <div class="row">
               <div class="col-sm-3">
-                  <h3 class="ground">Ground</h3>
+                  <h3 class="ground"> <a href="admin.html"> Ground</a></h3>
               </div>
                 <div class="col-sm-9 text-right">
                     <ul class="nav nav-pills navbar-right">
@@ -54,9 +54,11 @@
     ng-switch on="divSelect">
     
                <div admin-Dashboard   ng-switch-when="1"></div>
-              <div client-Creation  ng-switch-when="3"></div>
-              <div match-Creation  ng-switch-when="2"></div>
-              <div reports  ng-switch-when="4"></div>
+               <div user-Master   ng-switch-when="2"></div>
+               <div active-Sessions  ng-switch-when="3"></div>
+               <div score-Entry  ng-switch-when="4"></div>
+               <div admin-Reports  ng-switch-when="5"></div>
+          
   </div>
 
       </div>       <!--Container End here-->
